@@ -647,7 +647,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <excludes>
-            <exclude>**/*IntegrationTest.java</exclude>
+            <exclude>**/*IntegrationTestNoMatch.java</exclude>
           </excludes>
           <reuseForks>false</reuseForks>
           <forkCount>3</forkCount>

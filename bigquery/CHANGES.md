@@ -1,3 +1,5 @@
+## Next
+
 ### 1.2.1 - 2022-XX-XX
 
 1.  Update all dependencies to latest versions.

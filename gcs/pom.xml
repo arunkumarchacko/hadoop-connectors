@@ -71,8 +71,7 @@
                 <exclude>**/WebHdfsIntegrationTest.java</exclude>
               </excludes>
               <includes>
-                <include>**/*IntegrationTest.java</include>
-                <include>**/TestGoogleContract*.java</include>
+                <include>**/TestGoogleContractNoMatch*.java</include>
               </includes>
             </configuration>
           </plugin>
