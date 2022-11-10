@@ -392,7 +392,9 @@ public class GoogleCloudStorageImpl implements GoogleCloudStorage {
             ? CloudMonitoringMetricsRecorder.create(
                 options.getProjectId(),
                 new CredentialAdapter(
-                    ((RetryHttpInitializer) httpRequestInitializer).getCredential()))
+                    credential != null
+                        ? credential
+                        : ((RetryHttpInitializer) httpRequestInitializer).getCredential()))
             : new NoOpMetricsRecorder();
 
     // Create the gRPC stub if necessary;
