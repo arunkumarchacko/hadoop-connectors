@@ -252,7 +252,7 @@ public class HadoopCredentialsConfiguration {
                 .withPrefixes(keyPrefixes)
                 .get(config, config::get);
         try (FileInputStream fis = new FileInputStream(configFile)) {
-          return ExternalAccountCredentials.fromStream(fis, transport::get);
+          return ExternalAccountCredentials.fromStream(fis);
         }
       case UNAUTHENTICATED:
         return null;
