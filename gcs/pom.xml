@@ -229,6 +229,7 @@
                   <include>io.grpc</include>
                   <include>io.opencensus</include>
                   <include>io.opentelemetry</include>
+                  <include>io.opentelemetry.api</include>
                   <include>io.opentelemetry.contrib</include>
                   <include>io.opentelemetry.semconv</include>
                   <include>io.perfmark</include>
